@@ -1,4 +1,3 @@
-import math
 
 print('Hello World! Here ought to practice new skills which I was gaven on our class dedicated to Python')
 print('ВПРАВИ:')
@@ -68,12 +67,21 @@ print(z)
 # 5
 print(' Олексишина Олена \n Україна\n 5008\n м.Чернівці\n вул.Університетська 30\n н.30')
 # 6
-n=10
-f=32.8084
-t=393.7
-s= 0.00621371
-q=10.9361
-print('{0:f} {1:f} {2:f} {3:f} {4:f}'.format(n, f, t, s, q) )
+meters = input('Number:')
+inch_in_meters = 0.03
+foot_in_meters = 0.3
+mile_in_meters = 1609
+yard_in_meters = 0,9144
+
+a = meters * inch_in_meters
+b = meters * foot_in_meters
+c = meters * mile_in_meters
+d = meters * yard_in_meters
+
+print (a)
+print (b)
+print (c)
+print (d)
 # 7 табір тривав n днів, діти були в таборі -
 your_days = int(input("12"))
 print(your_days)
@@ -89,40 +97,25 @@ minsfor = format(min, "10")
 print(minsfor)
 hoursfor = format(hours, "10")
 print(hoursfor)
-# 8
-n=6
-f=2
-s=5
-t=9
-print(f'{n}+{f}+{s}+{t}={n+f+s+t}')
-с =15
-f = 32 + 9/5 * с
+# 8 температура на вулиці
+c = input('Number:')
+f = 32 + 9/5 * c
 k = c + 273,15
-print(f'{k}')
-print(f'{f}')
-#температура на вулиці
-your_degrees = int(input("20"))
-c = your_degrees
-f = your_degrees * 32 + 9/5
-k = c + 273.15
-formatc = format(c,"14,.2f")
-print(formatc)
-formatf = format(f,"14,.2f")
-print(formatf)
-formatk = format(k,"14,.2f")
-print(formatk)
+print(f)
+print(k)
 #9 розкладання чотирицифрового цілого числа і виведення на екран суми цифр у числі
 
 #10
-
+import math
 x1 = 39.9075000
 x2 = 116.3972300
 y1 = 50.4546600
 y2 = 30.5238000
-x11 = math.radians(x1)
-x22 = math.radians(x2)
-y11 = math.radians(y1)
-y22 = math.radians(y2)
-distancе = 6371.032 * math.acos(math.sin(x11) * math.sin(x22) +
-                                 math.cos(x11) * math.cos(x22) * math.cos(y11 - y22))
-print(distance)  # km
+a1= math.radians(x1)
+a2= math.radians(x2)
+b1= math.radians(y1)
+b2= math.radians(y2)
+distancee = 6371.032 * math.arccos(math.sin(a1) * math.sin(a2)
+                                 + math.cos(a1) * math.cos(a2) * math.cos(b1 - b2))
+print(distancee)
+
