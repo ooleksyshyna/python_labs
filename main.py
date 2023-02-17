@@ -1,3 +1,5 @@
+import math
+
 print('Hello World! Here ought to practice new skills which I was gaven on our class dedicated to Python')
 print('ВПРАВИ:')
 # 1
@@ -54,21 +56,39 @@ print(f"Hello,{name}, would you like to learn some Python today?")
 famous_person='Albert Einstein'
 message='"A person who never made a mistake never tried anything new."'
 print(f'{famous_person} once said, {message}')
-# 4
-print(' Олексишина Олена \n Україна\n 5008\n м.Чернівці\n вул.Університетська 30\n н.30')
+#4
+name="  \t Olenka \n   "
+print(name)
+t=name.lstrip()
+print(t)
+q=name.rstrip()
+print(q)
+z=name.strip()
+print(z)
 # 5
+print(' Олексишина Олена \n Україна\n 5008\n м.Чернівці\n вул.Університетська 30\n н.30')
+# 6
 n=10
 f=32.8084
 t=393.7
 s= 0.00621371
 q=10.9361
 print('{0:f} {1:f} {2:f} {3:f} {4:f}'.format(n, f, t, s, q) )
-# 6
-print('\nОленка\tОлексишина')
-# 7
-print('\t 1,5h')
-print('\t 90min')
-print('\t 5,400sec')
+# 7 табір тривав n днів, діти були в таборі -
+your_days = int(input("12"))
+print(your_days)
+seconds=your_days*12*60*60
+print(seconds)
+min=your_days*12*60
+print(min)
+hours=your_days*12
+print(hours)
+secondsfor = format(seconds, "10")
+print(secondsfor)
+minsfor = format(min, "10")
+print(minsfor)
+hoursfor = format(hours, "10")
+print(hoursfor)
 # 8
 n=6
 f=2
@@ -80,8 +100,21 @@ f = 32 + 9/5 * с
 k = c + 273,15
 print(f'{k}')
 print(f'{f}')
+#температура на вулиці
+your_degrees = int(input("20"))
+c = your_degrees
+f = your_degrees * 32 + 9/5
+k = c + 273.15
+formatc = format(c,"14,.2f")
+print(formatc)
+formatf = format(f,"14,.2f")
+print(formatf)
+formatk = format(k,"14,.2f")
+print(formatk)
+#9 розкладання чотирицифрового цілого числа і виведення на екран суми цифр у числі
+
 #10
-import math
+
 x1 = 39.9075000
 x2 = 116.3972300
 y1 = 50.4546600
@@ -90,5 +123,6 @@ x11 = math.radians(x1)
 x22 = math.radians(x2)
 y11 = math.radians(y1)
 y22 = math.radians(y2)
-distancee = 6371.032 * math.acos(math.sin(x11) * math.sin(x22) + math.cos(x11) * math.cos(x22) * math.cos(y11 - y22))
-print(distancee)  # km
+distancе = 6371.032 * math.acos(math.sin(x11) * math.sin(x22) +
+                                 math.cos(x11) * math.cos(x22) * math.cos(y11 - y22))
+print(distance)  # km
